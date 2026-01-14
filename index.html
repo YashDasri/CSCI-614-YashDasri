@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portfolio — Yash Dasri</title>
+    <!-- Link to central stylesheet (scalable - add more files under assets/css as needed) -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+
+  <body>
+    <header class="site-header">
+      <div class="container header__inner">
+        <a class="brand" href="#home">Yash Dasri</a>
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+          <span class="nav-toggle__bar"></span>
+          <span class="nav-toggle__bar"></span>
+          <span class="nav-toggle__bar"></span>
+        </button>
+
+        <nav class="site-nav" id="site-nav">
+          <ul class="nav__list">
+            <li><a class="nav__link is-active" href="#home">Home</a></li>
+            <li><a class="nav__link" href="#experience">Experience</a></li>
+            <li><a class="nav__link" href="#skills">Skills</a></li>
+            <li><a class="nav__link" href="#certifications">Certifications</a></li>
+            <li><a class="nav__link" href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- Section 1: Hero / Introduction (implemented) -->
+      <section id="home" class="section section--hero">
+        <div class="container">
+          <div class="hero">
+            <div class="hero__content">
+              <h1 class="hero__title">Hi, I'm Yash Dasri <span class="emoji">👋</span></h1>
+              <p class="hero__subtitle">Applied Computer Science graduate (Minor: Business) — Aiken, South Carolina</p>
+              <p class="hero__subtitle">Master's candidate in Computer Information & Sciences with hands-on experience in SOC analysis, web development, and DevOps.</p>
+              <div class="hero__actions">
+                <a class="btn" href="#experience">See my work</a>
+                <a class="btn btn--ghost" href="#contact">Get in touch</a>
+              </div>
+            </div>
+            <div class="hero__visual" aria-hidden="true">
+              <!-- Embedded one-page PDF resume (small preview) -->
+              <div class="pdf-preview">
+                <iframe src="./Yash_Dasri_General_Master_Resume.pdf" title="Resume preview" frameborder="0" loading="lazy"></iframe>
+                <div class="pdf-actions"><a href="./Yash_Dasri_General_Master_Resume.pdf" target="_blank" rel="noopener" class="btn btn--ghost">Open resume</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Placeholder sections (empty for now, will be filled later) -->
+    <section id="experience" class="section section--placeholder">
+        <div class="container">
+      <h2>Experience</h2>
+
+      <div class="card" style="margin-top:.75rem">
+            <h3>Yubi — Software Developer & DevOps Intern</h3>
+            <p class="muted">Jun 2025 – Jul 2025 · Mumbai, India</p>
+            <ul>
+              <li>Worked on backend features (Spring Boot), CI/CD with Jenkins, and container orchestration with Kubernetes/Rancher.</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3>University of South Carolina Aiken — Cyber Lab Assistant & TA</h3>
+            <p class="muted">Jan 2025 – Present · Aiken, SC</p>
+            <ul>
+              <li>Support hands-on cybersecurity lab sessions, assist with course delivery and grading.</li>
+              <li>Maintain lab environments, mentor students on network security and ethical hacking.</li>
+            </ul>
+          </div>
+
+          <div class="card" style="margin-top:.75rem">
+            <h3>Security Operations Center Analyst</h3>
+            <p class="muted">May 2024 – Dec 2024 · Aiken, SC</p>
+            <ul>
+              <li>Performed event analysis, incident response and vulnerability assessments using Cisco Meraki, Microsoft 365 Defender, and Azure.</li>
+              <li>Conducted threat modeling, security audits and network monitoring.</li>
+            </ul>
+          </div>
+
+          
+          <div class="card" style="margin-top:.75rem">
+            <h3>Technical Service Department Assistant</h3>
+            <p class="muted">Dec 2024 – Jul 2025 · Aiken, South Carolina, United States</p>
+            <ul>
+              <li>Maintained and assembled thin clients and deployed new devices across the organization.</li>
+              <li>Configured hardware, installed required software, and ensured smooth integration into existing infrastructure.</li>
+            </ul>
+          </div>
+
+          <div class="card" style="margin-top:.75rem">
+            <h3>Help Desk Assistant</h3>
+            <p class="muted">May 2024 – Jul 2024 · Aiken, South Carolina, United States</p>
+            <ul>
+              <li>Provided frontline technical support and troubleshooting for end-users, managing support tickets and resolving issues.</li>
+              <li>Assisted with software and hardware installations and guided users through system setups and configurations.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="section section--placeholder">
+        <div class="container">
+          <h2>Skills & Education</h2>
+          <div style="display:flex;gap:2rem;flex-wrap:wrap">
+            <div style="flex:1;min-width:220px">
+              <h3>Technical Skills</h3>
+              <ul>
+                <li><strong>Programming & Data:</strong> Python, C++, SQL</li>
+                <li><strong>Backend & DevOps:</strong> Spring Boot, REST APIs, Jenkins, CI/CD, Kubernetes, Rancher</li>
+                <li><strong>AI & Security:</strong> AI/ML Prompt Engineering, Threat Modeling, Vulnerability Assessment, SOC Monitoring, Incident Response</li>
+                <li><strong>Cloud & Platforms:</strong> Microsoft Azure, Cisco Meraki, Microsoft 365 Defender</li>
+                <li><strong>Web:</strong> HTML, CSS, Bootstrap</li>
+                <li><strong>Tools:</strong> GitHub, Virtual Machines, Microsoft Teams, Google Workspace</li>
+              </ul>
+            </div>
+
+            <div style="flex:1;min-width:220px">
+              <h3>Education</h3>
+              <ul>
+                <li><strong>Master's</strong> — Computer Information & Sciences, University of South Carolina Aiken (Aug 2024 - Dec 2025)</li>
+                <li><strong>BASc</strong> — Applied Computer Science, University of South Carolina Aiken; Minor in Business (Aug 2022 - May 2024)</li>
+              </ul>
+
+              <!-- Certifications & honors moved to the Certifications section -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="certifications" class="section section--placeholder">
+        <div class="container">
+          <h2>Certifications</h2>
+          <div class="card">
+            <h3>Courses & Certifications</h3>
+            <ul>
+              <li>Attention Mechanism</li>
+              <li>Build Your Generative AI Productivity</li>
+              <li>Skills with Microsoft and LinkedIn</li>
+              <li>Career Essentials in Generative AI — by Microsoft and LinkedIn</li>
+              <li>Create Image Captioning Models</li>
+              <li>Introduction to Generative AI</li>
+            </ul>
+          </div>
+
+          <div class="card" style="margin-top:.75rem">
+            <h3>Honors & Awards</h3>
+            <ul>
+              <li>Dean's List (Fall 2022)</li>
+              <li>Dean's List (Spring 2023)</li>
+              <li>President's List (Fall 2023)</li>
+              <li>President's List (Spring 2024)</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section section--placeholder">
+        <div class="container">
+          <h2>Contact</h2>
+          <p class="muted">Send me a message — fill the form below and I'll get back to you.</p>
+          <!--<div class="card" style="margin-bottom:.75rem">
+            <strong>Location:</strong> Aiken, South Carolina, United States<br />
+            <strong>Phone:</strong> 7066317458<br />
+            <strong>Email:</strong> <a href="mailto:yashdasri@gmail.com">yashdasri@gmail.com</a><br />
+            <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/yashdasri" target="_blank" rel="noopener">linkedin.com/in/yashdasri</a>
+          </div>-->
+
+          <form id="contact-form" class="contact-form" method="post" action="#" novalidate>
+            <div class="form-grid">
+              <div class="form-row">
+                <label for="name">Full name</label>
+                <input id="name" name="name" type="text" placeholder="Your full name" required />
+              </div>
+
+              <div class="form-row">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" placeholder="name@example.com" required />
+              </div>
+
+              <div class="form-row">
+                <label for="phone">Phone</label>
+                <input id="phone" name="phone" type="tel" placeholder="+1 555-555-5555" />
+              </div>
+
+              <div class="form-row">
+                <label for="subject">Subject</label>
+                <select id="subject" name="subject">
+                  <option value="general">General inquiry</option>
+                  <option value="project">Project collaboration</option>
+                  <option value="job">Job opportunity</option>
+                </select>
+              </div>
+
+              <div class="form-row form-row--full">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="6" placeholder="Tell me about your project or question" required></textarea>
+              </div>
+
+            <div class="form-actions">
+              <button type="submit" class="btn">Send message</button>
+              <button type="reset" class="btn btn--ghost">Reset</button>
+            </div>
+
+            <div id="contact-status" class="contact-status" role="status" aria-live="polite"></div>
+          </form>
+
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <small>&copy; <span id="year"></span> Yash Dasri— Built for clarity, scalability, and maintainability.</small>
+      </div>
+    </footer>
+
+  <!-- Section navigation controls -->
+  <button class="section-nav section-nav--prev" aria-label="Previous section" id="nav-prev">◀</button>
+  <button class="section-nav section-nav--next" aria-label="Next section" id="nav-next">▶</button>
+
+  <!-- Central script for interactions (mobile nav, smooth scroll, section spy, section nav) -->
+  <script src="assets/js/main.js" defer></script>
+  </body>
+</html>
