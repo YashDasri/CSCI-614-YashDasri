@@ -131,13 +131,53 @@ input[type="text"], input[type="email"], input[type="tel"], input[type="url"], i
 /* ==========================
   Responsive rules
   ========================== */
+/* Tablet: slightly smaller hero visual and spacing */
+@media (max-width: 1200px) and (min-width: 901px) {
+  .hero { grid-template-columns: 1fr 280px; gap: 1.25rem; }
+  .pdf-preview { max-width: 260px; }
+}
+
+/* Mobile: stack/layout adjustments for small screens */
 @media (max-width: 900px) {
+  /* Stack hero columns */
   .hero { grid-template-columns: 1fr; }
-  .site-nav { display: none; }
+
+  /* Mobile nav: hidden by default, shown by JS (display toggled) — when visible it should behave like an overlay */
+  .site-nav {
+    position: absolute;
+    top: var(--header-height);
+    left: 0;
+    right: 0;
+    background: var(--panel);
+    padding: 1rem;
+    box-shadow: 0 10px 30px rgba(15,23,42,0.08);
+    border-top: 1px solid rgba(15,23,42,0.04);
+  }
   .nav-toggle { display: inline-block; }
+
+  /* Touch-friendly nav links */
+  .site-nav .nav__list { flex-direction: column; gap: .5rem; }
+  .nav__link { display: block; padding: .75rem 1rem; font-size: 1rem; }
+
   .container { padding: 0 .75rem; }
   .section-nav { display: none; }
+
+  /* Make hero actions stack and be full-width on mobile */
+  .hero__actions { flex-direction: column; }
+  .hero__actions .btn { width: 100%; }
+
+  /* PDF preview smaller on mobile */
+  .pdf-preview { max-width: 220px; margin: 0 auto; }
+  .pdf-preview iframe { height: 180px; }
+
+  /* Forms: single column and larger controls for touch */
   .contact-form .form-grid { grid-template-columns: 1fr; }
+  input[type="text"], input[type="email"], textarea, select { font-size: 1rem; }
+  .form-actions { flex-direction: column; }
+  .form-actions .btn { width: 100%; }
+
+  /* Increase tap target size for buttons/links */
+  .nav__link, .btn { min-height: 44px; display: inline-flex; align-items: center; justify-content: center; }
 }
 
 
