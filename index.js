@@ -1,1 +1,1 @@
-const gcp_apikeys = "AIzaSy_FAKE_NOT_REAL_KEY";
+const gcp_apikeys = "AIzaSyBPEgT9EWhZjDXVWRMgOZ1Bf9TRL0TpcRw";
